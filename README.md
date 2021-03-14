@@ -22,16 +22,17 @@ There are three modules in this application
 ## Assignment
 We would like you to enhance the existing project and see you complete the following requirements:
 
-- `employee.json` has only `name`, and `id` elements. Please add `date of birth` and `address` elements to the `Employee` resource. Address will have `line1`, `line2`, `city`, `state`, `country` and `zip_code` elements. `line2` is an optional element.
-- Add one more operation in `EmployeeResource` to create an employee. `EmployeeResource` will have two operations, one to create, and another to retrieve the employee resource.
-- Implement create and retrieve operations in `EmployeeResourceImpl.java`.
-- Resource created using create endpoint should be retrieved using retrieve/get endpoint.
-- Please add the unit tests to validate your implementation.
-- Please use h2 in-memory database or any other in-memory database to persist the `Employee` resource. Dependency for h2 in-memory database is already added to the parent pom.
-- Please make sure the validations are done for the requests.
-- Response codes are as per rest guidelines.
-- Error handling in case of failures.
-- Idempotency logic is implemented to avoid duplicate resource creation.
+- [x] `employee.json` has only `name`, and `id` elements. Please add `date of birth` and `address` elements to the `Employee` resource. Address will have `line1`, `line2`, `city`, `state`, `country` and `zip_code` elements. `line2` is an optional element.
+
+- [x] Add one more operation in `EmployeeResource` to create an employee. `EmployeeResource` will have two operations, one to create, and another to retrieve the employee resource.
+- [x] Implement create and retrieve operations in `EmployeeResourceImpl.java`.
+- [x] Resource created using create endpoint should be retrieved using retrieve/get endpoint.
+- [x] Please add the unit tests to validate your implementation.
+- [x] Please use h2 in-memory database or any other in-memory database to persist the `Employee` resource. Dependency for h2 in-memory database is already added to the parent pom.
+- [x] Please make sure the validations are done for the requests.
+- [x] Response codes are as per rest guidelines.
+- [x] Error handling in case of failures.
+- [x] Idempotency logic is implemented to avoid duplicate resource creation.
 
 ## Assignment submission
 Thank you very much for your time to take this test. Please upload this complete solution in Github and send us the link to `bfs-sor-interview@paypal.com`.
