@@ -70,6 +70,11 @@ public class EmployeeResourceImplTest {
     }
 
     @Test
+    public void requestForNonExistentEmployee() throws Exception {
+        mvc.perform(get("/v1/bfs/employees/121").accept(MediaType.APPLICATION_JSON)).andExpect(status().isNotFound());
+    }
+
+    @Test
     public void duplicateEmployeeCreationFails() throws Exception {
         Employee emp = getEmployee();
         mvc.perform(post("/v1/bfs/employees").contentType(MediaType.APPLICATION_JSON).content(toJson(emp)))
